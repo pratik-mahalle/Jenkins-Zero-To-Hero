@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'pratikmahalle17/maven-abhishek-docker-agent:v1'
+      image 'pratikmahalle17/ultimate-cicd-pipeline:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
